@@ -35,8 +35,7 @@ function App() {
       { win: [2, 4, 6], className: "strike-diagonal-2" },
     ];
 
-    for (const combination of winningCombinations) {
-      const { win, className } = combination;
+    for (const { win, className } of winningCombinations) {
       if (
         board[win[0]] &&
         board[win[0]] === board[win[1]] &&
